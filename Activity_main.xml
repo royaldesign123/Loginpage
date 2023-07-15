@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/sighup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="68dp"
+        android:gravity="center"
+        android:text="Sign in"
+        android:textColor="@color/black"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sighup"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+
+        android:layout_marginBottom="39dp"
+        android:background="#30ff"
+        android:hint="UserName"
+        android:padding="18dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_margin="39dp"
+        android:background="#30ff"
+        android:inputType="textPassword"
+        android:hint="password"
+        android:padding="18dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#30f"
+        android:text="Login"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>
